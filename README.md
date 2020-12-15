@@ -17,3 +17,15 @@ This is another example that should produce a similar result:
 ```
 ansible-runner run -p blockinfile.yml . -vvv
 ```
+
+#### Attempted solutions
+
+Adding:
+
+```
+"ANSIBLE_LOCAL_TEMP": "/runner"
+```
+
+to `env/envvars` has not worked.
+
+It seems to be ignored, and continues to use the `/root/` folder.
