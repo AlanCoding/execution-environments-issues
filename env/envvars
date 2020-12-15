@@ -1,5 +1,6 @@
 {
     "ANSIBLE_FORCE_COLOR": "True",
     "ANSIBLE_RETRY_FILES_ENABLED": "False",
-    "PROJECT_UPDATE_ID": "10"
+    "PROJECT_UPDATE_ID": "10",
+#    "ANSIBLE_LOCAL_TEMP": "/runner"  # fix does not work
 }

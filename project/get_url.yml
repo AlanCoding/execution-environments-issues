@@ -3,6 +3,8 @@
   gather_facts: false
   connection: local
   name: Show bug with get_url module and runner
+  # vars:  # fix option 1
+  #   ansible_remote_tmp: /runner/.ansible/tmp
   tasks:
 
     - name: Get archive from url

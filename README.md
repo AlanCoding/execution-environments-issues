@@ -18,7 +18,13 @@ This is another example that should produce a similar result:
 ansible-runner run -p blockinfile.yml . -vvv
 ```
 
-#### Attempted solutions
+#### Verified Solutions
+
+Two options are noted in comments.
+ - Use docker instead of podman (see `env/settings`)
+ - Set the play variable `ansible_remote_tmp` to a location inside the volume
+
+#### Failed Solutions
 
 Adding:
 

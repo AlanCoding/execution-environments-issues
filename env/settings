@@ -1,4 +1,5 @@
 {
   "container_image": "quay.io/ansible/ansible-runner:devel",
-  "process_isolation": true
+  "process_isolation": true,
+#  "process_isolation_executable": "docker"  # fix option 2
 }

@@ -2,6 +2,8 @@
 - name: Verify that ansible can correctly pass arguments to ansible in shell
   hosts: localhost
   gather_facts: False
+  # vars:  # fix option number 1
+  #   ansible_remote_tmp: /runner/.ansible/tmp
   tasks:
     - name: Write inventory file
       blockinfile:
@@ -9,4 +11,5 @@
         block: |
           localhost ansible_connection=local
         state: present
+        # unsafe_writes: true  # fix does not work
         create: True
