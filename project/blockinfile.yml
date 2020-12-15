@@ -1,0 +1,12 @@
+---
+- name: Verify that ansible can correctly pass arguments to ansible in shell
+  hosts: localhost
+  gather_facts: False
+  tasks:
+    - name: Write inventory file
+      blockinfile:
+        path: '/runner/inventory.ansible.shell'
+        block: |
+          localhost ansible_connection=local
+        state: present
+        create: True
