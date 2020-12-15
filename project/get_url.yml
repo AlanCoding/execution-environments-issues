@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+  name: Show bug with get_url module and runner
+  tasks:
+
+    - name: Get archive from url
+      get_url:
+        url: "https://github.com/ansible/ansible-builder/archive/0.3.1.zip/"
+        dest: "/runner/ansible-builder.zip"

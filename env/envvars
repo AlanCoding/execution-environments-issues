@@ -1,0 +1,5 @@
+{
+    "ANSIBLE_FORCE_COLOR": "True",
+    "ANSIBLE_RETRY_FILES_ENABLED": "False",
+    "PROJECT_UPDATE_ID": "10"
+}
